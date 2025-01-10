@@ -9,3 +9,67 @@
     <h1>will you be my valentine? </h1>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe6e6;
+            color: #333;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        button {
+            font-size: 1.2em;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button#yes {
+            background-color: #ff4d4d;
+            color: white;
+        }
+        button#yes:hover {
+            background-color: #e60000;
+        }
+        button#no {
+            background-color: #cccccc;
+            color: #333;
+        }
+        button#no:hover {
+            background-color: #999999;
+        }
+        #response {
+            margin-top: 30px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Will You Be My Valentine?</h1>
+    <button id="yes">Yes</button>
+    <button id="no">No</button>
+    <div id="response"></div>
+
+    <script>
+        document.getElementById('yes').addEventListener('click', function() {
+            document.getElementById('response').innerText = "YAYYY YOU SAID YES! 💖";
+        });
+
+        document.getElementById('no').addEventListener('click', function() {
+            document.getElementById('response').innerText = "thank you for atleast coming to my website😢";
+        });
+    </script>
+</body>
+</html>
